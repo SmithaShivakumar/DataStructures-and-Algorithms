@@ -1,0 +1,14 @@
+from collections import Counter
+class Solution:
+    def mostFrequentEven(self, nums: List[int]) -> int:
+        nums = sorted(nums)
+        evenNums =[]
+        freqkey = 0
+        for i in range(len(nums)):
+            if nums[i] % 2 == 0:
+                evenNums.append(nums[i])
+            else:
+                continue
+                
+        _count = Counter(evenNums)
+        return(_count.most_common()[0][0]) if evenNums else -1
