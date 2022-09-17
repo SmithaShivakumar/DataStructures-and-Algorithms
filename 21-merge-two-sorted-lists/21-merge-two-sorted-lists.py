@@ -22,8 +22,5 @@ class Solution:
             tail.next = list1   
         else:
             tail.next = list2
-            
         return dummy.next
-        """   
-           # Do not return anything, modify nums1 in-place instead.
-        """
+        
