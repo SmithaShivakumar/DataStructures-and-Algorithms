@@ -25,5 +25,4 @@ class Solution:
             # increment count in each iteration
             count += 1
 
-        print('temp.next',temp)
         return temp
