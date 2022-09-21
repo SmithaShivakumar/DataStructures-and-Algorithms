@@ -1,7 +1,12 @@
+from collections import Counter
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         
-        hashS , hashT = {}, {}
+        
+        return Counter(s) == Counter(t)
+    
+        '''hashS , hashT = {}, {}
         
         if len(s) != len(t):
             return False
@@ -15,5 +20,5 @@ class Solution:
             if hashS[key] != hashT.get(key, 0):
                 return False
             
-        return True
+        return True'''
                 
