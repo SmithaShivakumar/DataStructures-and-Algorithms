@@ -6,7 +6,7 @@ class Solution:
             diff = target - nums[n]
             print (diff)
             if diff in sumTarget and sumTarget[diff] != n:
-                return [sumTarget[diff], n]
+                return [sumTarget[diff], n] 
             else:
                 continue
         return
