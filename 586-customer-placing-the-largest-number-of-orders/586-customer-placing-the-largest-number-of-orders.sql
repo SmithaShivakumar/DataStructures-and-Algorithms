@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 
-select customer_number from orders 
-group by customer_number
-having count(customer_number) >= all 
-(select count(customer_number) from orders group by customer_number)
+
+select customer_number from 
+(select customer_number, count(customer_number) as cnt from orders 
+group by customer_number order by cnt desc) as t limit 1;
