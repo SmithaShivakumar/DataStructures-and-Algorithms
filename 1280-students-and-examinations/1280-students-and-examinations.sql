@@ -8,5 +8,3 @@ on s.student_id = e.student_id and e.subject_name = sb.subject_name
 group by s.student_id, sb.subject_name
 order by s.student_id, sb.subject_name
 
-
-
